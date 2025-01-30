@@ -54,14 +54,14 @@ public String reverse(String str)
     }
     return reverseString;
 }
-  public String onlyLetters(String sString){
-StringBuilder lettersOnly = new StringBuilder();
-for (int i = 0; i < sString.length(); i++) {
-if (Character.isLetter(sString.charAt(i))) {
-lettersOnly.append(sString.charAt(i));
-   }
-    }
-    return lettersOnly.toString();  
+   public String onlyLetters(String sString){
+   String letters = "";
+  for(int i = 0; i < sString.length(); i++){
+    if(Character.isLetter(sString.charAt(i))){
+      letters +=sString.substring(i,i+1);
+ }
+  }
+  return ans;
 }
 
 }
