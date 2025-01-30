@@ -50,12 +50,12 @@ public String reverse(String str)
     return reverseString;
 }
   public String onlyLetters(String sString){
-   String letters = "";
-  for(int i = 0; i < sString.length(); i++){
-    if(Character.isLetter(sString.charAt(i))){
-      letters +=sString.substring(i,i+1);
- }
+  StringBuilder letters = new StringBuilder();
+   for (int i = 0; i < sString.length(); i++) {
+  if (Character.isLetter(sString.charAt(i))) {
+    letters.append(sString.charAt(i)); 
+      }
+    }
+  return letters.toString().toLowerCase();
   }
-  return letters;
-}
 }
