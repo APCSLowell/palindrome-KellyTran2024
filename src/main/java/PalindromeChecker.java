@@ -61,7 +61,7 @@ public String reverse(String str)
       letters +=sString.substring(i,i+1);
  }
   }
-  return ans;
+  return letters;
 }
 
 }
